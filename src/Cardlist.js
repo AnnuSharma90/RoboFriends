@@ -1,22 +1,19 @@
-import React from 'react';
-import Card from './card';
+import React from "react";
+import Card from "./card";
 
-
-
-const Cardlist= ({robots}) =>{
-	return(
-		<div>{
-		robots.map((user,i)=>{
-			return(
-				<Card 
-				id={robots[i].id} 
-				name={robots[i].name} 
-				email={robots[i].email}
-				/>
+const Cardlist = ({ robots }) => {
+	return (
+		<div>
+			{robots.map((user, i) => {
+				return (
+					<Card
+						id={robots[i].id}
+						name={robots[i].name}
+						email={robots[i].email}
+					/>
 				);
-		})
-		}
-	</div>
+			})}
+		</div>
 	);
 };
 export default Cardlist;
